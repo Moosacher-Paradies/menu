@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Moosacher Paradies - Speisekarte</title>
+    <script type="module" crossorigin src="/assets/index.7650a87e.js"></script>
+    <link rel="stylesheet" href="/assets/index.4b73fdd8.css">
+  </head>
+  <body class="bg-[#0c1315] text-xl text-[#b09e66]">
+  <main class="container mx-auto">
+    <label class="w-full ">Titel (z.B. Frühstück, Mittag, ...)
+      <input class="w-full form-input" id="title">
+    </label>
+
+    <div class="flex flex-col">
+      <div class="flex flex-col">
+        <label class="mt-10 w-full">Speisekarte
+          <textarea class="form-textarea w-full h-48" id="col-1"></textarea>
+        </label>
+
+        <p class="p-6 bg-blue-400 text-black">Speisekarte wie folgt eingeben:<br><br>
+        <code>Speise; Beschreibung; Preis<br>
+        Speise; Beschreibung; Preis</code>
+        </p>
+
+      </div>
+
+        <label class="mt-4 w-full">Shortcode <button class="ml-10 py-2 px-3 bg-[#b09e66] text-white" onclick="copyToClipboard()"><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+        </svg> Kopieren</button>
+          <textarea class="form-textarea w-full select-all" id="output" readonly></textarea>
+        </label>
+
+    </div>
+
+  </main>
+
+    
+  </body>
+</html>
